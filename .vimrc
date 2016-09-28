@@ -12,6 +12,10 @@ call vundle#begin()
 Plugin 'git://github.com/Valloric/YouCompleteMe.git'
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 map <Leader>d :YcmCompleter GoToDefinition<CR>
+map <Leader>n :lnext<CR>
+map <Leader>p :lprev<CR>
+map <Leader>lo :lopen<CR>
+map <Leader>lc :lclose<CR>
 
 Plugin 'The-NERD-Commenter'
 
