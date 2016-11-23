@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'git://github.com/Valloric/YouCompleteMe.git'
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 map <Leader>d :YcmCompleter GoToDefinition<CR>
+map <Leader>f :YcmCompleter FixIt<CR>
 map <Leader>n :lnext<CR>
 map <Leader>p :lprev<CR>
 map <Leader>lo :lopen<CR>
@@ -67,10 +68,8 @@ set backspace=indent,eol,start
 
 set clipboard=unnamedplus
 
-imap <F2> <Esc>:w<CR>
-map <F2> <Esc>:w<CR>
-imap <F1> <Esc>:w<CR>
-map <F1> <Esc>:w<CR>
+imap <Leader>s <Esc>:w<CR>
+map <Leader>s <Esc>:w<CR>
 
 map , <Leader>
 
