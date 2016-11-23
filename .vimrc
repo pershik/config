@@ -68,7 +68,6 @@ set backspace=indent,eol,start
 
 set clipboard=unnamedplus
 
-imap <Leader>s <Esc>:w<CR>
 map <Leader>s <Esc>:w<CR>
 
 map , <Leader>
