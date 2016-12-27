@@ -71,5 +71,6 @@ set clipboard=unnamedplus
 map <Leader>s <Esc>:w<CR>
 
 map , <Leader>
+imap jj <Esc>
 
 au FileType cpp,h inoremap {<CR> {<CR>}<ESC>k$a<CR>
