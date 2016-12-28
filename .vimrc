@@ -13,8 +13,8 @@ Plugin 'git://github.com/Valloric/YouCompleteMe.git'
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 map <Leader>d :YcmCompleter GoToDefinition<CR>
 map <Leader>f :YcmCompleter FixIt<CR>
-map <Leader>n :lnext<CR>
-map <Leader>p :lprev<CR>
+map <Leader>ln :lnext<CR>
+map <Leader>lp :lprev<CR>
 map <Leader>lo :lopen<CR>
 map <Leader>lc :lclose<CR>
 
@@ -68,9 +68,13 @@ set backspace=indent,eol,start
 
 set clipboard=unnamedplus
 
-map <Leader>s <Esc>:w<CR>
-
 map , <Leader>
 imap jj <Esc>
+imap js <Esc>:w<CR>
+map <Leader>s :w<CR>
 
-au FileType cpp,h inoremap {<CR> {<CR>}<ESC>k$a<CR>
+
+au FileType cpp,h,java inoremap {<CR> {<CR>}<ESC>k$a<CR>
+
+" Eclim autocomplete
+let g:EclimCompletionMethod = 'omnifunc'
